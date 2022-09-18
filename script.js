@@ -144,7 +144,7 @@ forecastWeather: function (response) {
       day4windEl.innerHTML = "Wind: " + response.list[30].wind.speed + " mph";
       day4humidityEl.innerHTML = "Humidity: " + response.list[30].main.humidity + " %";
 
-      let date5El = moment().add(1, 'days');
+      let date5El = moment().add(5, 'days');
         $("p.date-display5").html(date5El.format("L"));
       let iconDay5El = document.getElementById("icon5");
       let day5tempEl = document.getElementById("day5temp");
@@ -163,6 +163,15 @@ forecastWeather: function (response) {
   //link search bar to search button}
   search: function () {
     this.fetchWeather(document.querySelector("#citysearch").value);
+    let list = [];
+    list.push ("city", (citysearch.value))
+    localStorage.setItem("list", JSON.stringify(list))
+
+    localStorage.getItem("list") 
+    list = JSON.parse(localStorage.getItem("highscores"));
+    const searchHistory1 = document.getElementById("search-history1")
+    searchHistory1.innerHTML = list[1]
+  
   },
 };
 
