@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>Weather-App</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="columns">
+        <div class="column">
+            <label>Search for City</label>
+            <form>
+                <input type="text" id="citysearch" placeholder="San Diego">
+                <button id="searchBtn" type="button" >Search</button>
+            </form>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+            <button id="search-history1">New York</button>
+        </div>
+        <div id="current-city" class="column">
+            <h1 id="current-city-name" class="title">City Name</h1>
+            <article class="title is-4 m-6 py-4">
+                <icon>""</icon>
+                <p class="has-text-white">Temp</p>
+                <p class="has-text-white">Wind</p>
+                <p class="has-text-white">Humidity</p>
+            </article>
+            <container class="is-flex is-justify-content-space-evenly">
+                <item id="day1" class="title is-5 has-text-white py-6">
+                    <p id="date1">Date</p>
+                    <icon>""</icon>
+                    <p id="day1temp">Temp:</p>
+                    <p id="day1wind">Wind:</p>
+                    <p id="day1humidity">Humidity:</p>
+                </item>
+                <item id="day2" class="title is-5 has-text-white py-6">
+                    <p id="date2">Date</p>
+                    <icon>""</icon>
+                    <p id="day2temp">Temp:</p>
+                    <p id="day2wind">Wind:</p>
+                    <p id="day2humidity">Humidity:</p>
+                </item>
+                <item id="day3" class="title is-5 has-text-white py-6">
+                    <p id="date3">Date</p>
+                    <icon>""</icon>
+                    <p id="day3temp">Temp:</p>
+                    <p id="day3wind">Wind:</p>
+                    <p id="day3humidity">Humidity:</p>
+                </item>
+                <item id="day4" class="title is-5 has-text-white py-6">
+                    <p id="date4">Date</p>
+                    <icon>""</icon>
+                    <p id="day4temp">Temp:</p>
+                    <p id="day4wind">Wind:</p>
+                    <p id="day4humidity">Humidity:</p>
+                </item>
+                <item id="day5" class="title is-5 has-text-white py-6">
+                    <p id="date5">Date</p>
+                    <icon>""</icon>
+                    <p id="day5temp">Temp:</p>
+                    <p id="day5wind">Wind:</p>
+                    <p id="day5humidity">Humidity:</p>
+                </item>
+            </container>
+        </div>
+    </div>
+</body>
+</html>
