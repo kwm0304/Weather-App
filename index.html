@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
     <script src="./script.js" defer></script>
     <title>Weather Dashboard</title>
 </head>
@@ -42,45 +43,47 @@
     <div id="currentcity" class="column is-8 has-background-info">
         
         <h1 id="current-city-name" class="title is-2 has-text-white has-text-centered">CITY NAME</h1>
-        <article class="title is-4 m-6 py-4">
+        <article class="title is-4 m-6 py-4 px-auto image is-40x40">
         <p id="current-temp" class="has-text-white">Temp:</p>
         <p id="current-desc" class="has-text-white"></p>
-        <icon id="current-icon" class="icon"></icon>
+        <figure id="current-icon" class="image is-128x128"></figure>
         <p id="current-wind" class="has-text-white">Wind:</p>
         <p id="current-humidity" class="has-text-white">Humidity:</p>
+        <a id="latitude" class="hidden"></a>
+        <a id="longitude" class="hidden"></a>
         </article>
         <container class="is-flex is-justify-content-space-evenly">
-            <item id="day1" class="title is-5 has-text-white py-6">
-                <p id="date1">Date</p>
-                <icon>""</icon>
+            <item id="day1" class="title is-6 has-text-white py-6">
+                <p id="date1" class="date-display1">Date</p>
+                <icon id="icon1">""</icon>
                 <p id="day1temp">Temp:</p>
                 <p id="day1wind">Wind:</p>
                 <p id="day1humidity">Humidity:</p>
             </item>
-            <item id="day2" class="title is-5 has-text-white py-6">
-                <p id="date2">Date</p>
-                <icon>""</icon>
+            <item id="day2" class="title is-6 has-text-white py-6">
+                <p id="date2" class="date-display2">Date</p>
+                <icon id="icon2">""</icon>
                 <p id="day2temp">Temp:</p>
                 <p id="day2wind">Wind:</p>
                 <p id="day2humidity">Humidity:</p>
             </item>
-            <item id="day3" class="title is-5 has-text-white py-6">
-                <p id="date3">Date</p>
-                <icon>""</icon>
+            <item id="day3" class="title is-6 has-text-white py-6">
+                <p id="date3" class="date-display3">Date</p>
+                <icon id="icon3">""</icon>
                 <p id="day3temp">Temp:</p>
                 <p id="day3wind">Wind:</p>
                 <p id="day3humidity">Humidity:</p>
             </item>
-            <item id="day4" class="title is-5 has-text-white py-6">
-                <p id="date4">Date</p>
-                <icon>""</icon>
+            <item id="day4" class="title is-6 has-text-white py-6">
+                <p id="date4" class="date-display4">Date</p>
+                <icon id="icon4">""</icon>
                 <p id="day4temp">Temp:</p>
                 <p id="day4wind">Wind:</p>
                 <p id="day4humidity">Humidity:</p>
             </item>
-            <item id="day5" class="title is-5 has-text-white py-6">
-                <p id="date5">Date</p>
-                <icon>""</icon>
+            <item id="day5" class="title is-6 has-text-white py-6">
+                <p id="date5" class="date-display5">Date</p>
+                <icon id="icon5">""</icon>
                 <p id="day5temp">Temp:</p>
                 <p id="day5wind">Wind:</p>
                 <p id="day5humidity">Humidity:</p>
@@ -88,6 +91,6 @@
             </container>
     </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 </html>

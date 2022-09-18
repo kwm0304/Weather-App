@@ -16,3 +16,11 @@
 .item {
     padding: 10px;
 }
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+.hidden {
+    display:none;
+}
